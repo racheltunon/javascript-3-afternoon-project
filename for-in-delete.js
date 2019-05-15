@@ -40,7 +40,13 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let words = "";
+  for (let key in obj){
+    words += obj[key];
+    
+  }
+ return words;
+  
 }
 
 
@@ -52,6 +58,15 @@ function showValues( obj ) {
   Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
+function greaterThan10 (obj){
+  for (let key in obj){
+    if (obj[key]>10){
+      obj[key]=0; 
+    }
+    
+  }
+  return obj;
+}
 
 //Code Here
 
@@ -64,7 +79,12 @@ function showValues( obj ) {
   Write a for in loop that loops over the object and changes every value to be itself multipled by 2.
   Return the updated object.
 */
-
+function double (obj){
+  for (let key in obj){
+    obj[key] = obj[key]*2;
+  }
+return obj; 
+}
 //Code Here
 
 

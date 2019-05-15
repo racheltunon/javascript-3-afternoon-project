@@ -18,7 +18,10 @@ let product = {
 }
 
 // code here
-
+let productCopy = {};
+function duplicate(product){
+  return productCopy(...product)
+}
 
 
 
@@ -29,7 +32,7 @@ let product = {
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
-
+let colorsCopy = [...colors];
 
 
 
